@@ -61,6 +61,7 @@ public class TxtFileService {
         return bucketComponent.presign(file.getTxtBucketKey(), Duration.ofHours(12)).toString();
       } catch (Exception e) {
         e.printStackTrace();
+
         return null;
       }
     } else {
